@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using TWeb48.Helpers;
+using TWeb48.Models;
 
 namespace TWeb48
 {
@@ -16,6 +18,54 @@ namespace TWeb48
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            CheckAndCreateRoles();
+            CheckAndCreateDefaultUser();
         }
-    }
+        
+        private void CheckAndCreateRoles()
+        {
+            using (var context = new TWebDbContext())
+            {
+                if (!context.Roles.Any())
+                {
+                    context.Roles.Add(new Role { Name = "Admin", RoleId = Guid.NewGuid()});
+                    context.Roles.Add(new Role { Name = "User", RoleId = Guid.NewGuid()});
+                    context.SaveChanges();
+                }
+            }
+        }
+
+        private void CheckAndCreateDefaultUser()
+        {
+            using (var context = new TWebDbContext())
+            {
+                var user = context.Users.FirstOrDefault(r => r.Name == "demouser");
+
+                if (user == null)
+                {
+                    var role = context.Roles.FirstOrDefault(r => r.Name == "Admin");
+                    if (role != null)
+                    {
+                        var pass = PasswordHelper.HashPassword("Test123!");
+                        user = new User
+                        {
+                            Name = "demouser",
+                            PasswordHash = pass,
+                            Email = "demouser@demo.demo",
+                            PhoneNumber = "11111111111",
+                            LicenceNumber = "LIC123456",
+                            UserId = Guid.NewGuid()
+                        };
+                        context.Users.Add(user);
+                        context.UserRoles.Add(new UserRole
+                        {
+                            RoleId = role.RoleId,
+                            UserId = user.UserId
+                        });
+                        context.SaveChanges();
+                    }
+                }
+            }
+        }
+    }   
 }

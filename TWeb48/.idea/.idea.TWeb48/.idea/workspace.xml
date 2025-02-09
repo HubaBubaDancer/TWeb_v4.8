@@ -8,28 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e337d43-c1d1-4d7c-80af-258ab4c6216f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Controllers/AccountController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/BaseDbItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Car.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/LoginModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Role.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/UserRole.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TWebDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/Account/Login.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/Account/Logout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/Account/Profile.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/Account/Register.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/newStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App_Start/RouteConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App_Start/RouteConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Helpers/PasswordHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/IAccountService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AccountController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Global.asax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Global.asax.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TWeb48.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TWeb48.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Web.config" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Web.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web.config" beforeDir="false" afterPath="$PROJECT_DIR$/Web.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/packages.config" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +42,20 @@
     &quot;accountId&quot;: &quot;5265cb67-76a9-4970-84d7-bf9418dbbb4c&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/App_Start/RouteConfig.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Global.asax.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Web.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Web.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/packages.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/packages.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/37558cf62c5f4f8bb1a7bdf8b6dbdfad4c3420/c5/663f14b3/DbModelBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/2a7770f5c8da41d5a88abad1cfb8c59e110c00/ea/9ea52b0b/Npgsql.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -83,7 +81,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -126,6 +124,23 @@
       <workItem from="1729262617073" duration="22000" />
       <workItem from="1739035550833" duration="1110000" />
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <option name="closed" value="true" />
+      <created>1739119414742</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739119414742</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added db integration with Npgsql + migrations">
+      <option name="closed" value="true" />
+      <created>1739133172427</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739133172427</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,24 +150,31 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="First commit" />
+    <MESSAGE value="Added db integration with Npgsql + migrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added db integration with Npgsql + migrations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Controllers/AccountController.cs</url>
-          <line>16</line>
+          <line>28</line>
           <properties documentPath="C:\UTM\IV\TWeb\TWeb_v4.8\TWeb48\Controllers\AccountController.cs" containingFunctionPresentation="Method 'Login'">
             <startOffsets>
-              <option value="341" />
+              <option value="612" />
             </startOffsets>
             <endOffsets>
-              <option value="399" />
+              <option value="684" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -176,6 +176,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\PasswordHelper.cs" />
     <Compile Include="Migrations\202502092023214_InitialCreate.cs" />
     <Compile Include="Migrations\202502092023214_InitialCreate.Designer.cs">
       <DependentUpon>202502092023214_InitialCreate.cs</DependentUpon>
@@ -189,6 +190,7 @@
     <Compile Include="Models\UserRole.cs" />
     <Compile Include="NpgSqlConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\IAccountService.cs" />
     <Compile Include="TWebDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
