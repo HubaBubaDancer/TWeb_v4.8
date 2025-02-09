@@ -1,5 +1,6 @@
 ﻿@{
-ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home Page";
+    var userName =  User.Identity.Name;
 }
 
 <head>
@@ -8,9 +9,14 @@ ViewData["Title"] = "Home Page";
     <link rel="stylesheet" href="~/wwwroot/newStyle.css"/>
 </head>
 
-
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    @if (!string.IsNullOrEmpty(userName))
+    {
+        <h1 class="display-4">Hello, @userName</h1>
+    }
+    else
+    {
+        <h1 class="display-4">Welcome</h1>
+    }
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
-
