@@ -5,7 +5,7 @@ namespace TWeb48
 {
     public class TWebDbContext : DbContext
     {
-        public TWebDbContext() : base("name=DefaultConnection")
+        public TWebDbContext() : base("name=TWebDbContext")
         {
         }
         
