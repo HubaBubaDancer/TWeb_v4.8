@@ -1,0 +1,35 @@
+@model TWeb48.Models.CarRequest
+@using (Html.BeginForm("AddCar", "Admin", FormMethod.Post))
+{
+    <head>
+        <title>aaa</title>
+        <link rel="stylesheet" href="~/wwwroot/site.css"/>
+        <link rel="stylesheet" href="~/wwwroot/newStyle.css"/>
+    </head>
+
+
+    <div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Name)
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Description)
+            @Html.TextBoxFor(m => m.Description, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Price)
+            @Html.TextBoxFor(m => m.Price, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.PhotoPaths)
+            @Html.TextBox("PhotoPaths[0]", null, new { @class = "form-control", placeholder = "Enter photo path" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.PhotoPaths)
+            @Html.CheckBoxFor(m => m.IsHidden)
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+}

@@ -1,0 +1,30 @@
+@model TWeb48.Models.Car
+
+<head>
+    <title>CarInfo</title>
+    <link rel="stylesheet" href="~/wwwroot/site.css"/>
+    <link rel="stylesheet" href="~/wwwroot/newStyle.css"/>
+</head>
+
+
+
+@if (Model.IsHidden == false)
+{
+    <div class="profile-info">
+        <h2>@Model.Name Info</h2>
+        <p><strong>Description:</strong> @Model.Description</p>
+        <p><strong>Price:</strong> @Model.Price</p>
+    
+        @foreach(var item in Model.PhotoPaths)
+        {
+            <img src="@item" alt="Car Image" width="200" height="200">
+        }
+    </div>
+}
+else
+{
+    <div class="profile-info">
+        <h2>Car is hidden</h2>
+    </div>
+}
+

@@ -1,0 +1,29 @@
+@model IEnumerable<TWeb48.Models.Car>
+
+<head>
+    <title>Cars</title>
+    <link rel="stylesheet" href="~/wwwroot/site.css"/>
+    <link rel="stylesheet" href="~/wwwroot/newStyle.css"/>
+</head>
+
+@if (!Model.Any())
+{
+    <div class="profile-info">
+        <h2>No cars available</h2>
+    </div>
+}
+else
+{
+    foreach (var car in Model)
+    {
+        <div class="car-info">
+            <h2>@car.Name Info</h2>
+            @foreach(var item in car.PhotoPaths)
+            {
+                <img src="@item" alt="Car Image" width="200" height="200">
+            }
+            <a href="@Url.Action("Car", "Home", new { id = car.Id })" class="btn btn-primary">Add Car</a>
+        </div>
+    }
+}
+

@@ -40,21 +40,27 @@ namespace TWeb48.Controllers
                 return View(model);
             }
             
+            
+            var roles = _context.UserRoles
+                .Where(ur => ur.UserId == user.UserId)
+                .Select(ur => ur.Role.Name)
+                .ToArray();
+            
             var ticket = new FormsAuthenticationTicket(
-                1,                     // Версия тикета
-                user.Name,             // Имя пользователя
-                DateTime.Now,          // Дата создания
-                DateTime.Now.AddMinutes(30), // Время истечения
-                true,                  // Запомнить (Persistent)// UserData (можно записать ID, роль, JSON и т. д.)
+                1,                   
+                user.Name,          
+                DateTime.Now,
+                DateTime.Now.AddMinutes(30), 
+                true,
+                string.Join(",", roles),
                 FormsAuthentication.FormsCookiePath
             );
-
-            // Шифруем тикет и создаем куку
+            
             string encryptedTicket = FormsAuthentication.Encrypt(ticket);
             var authCookie = new HttpCookie(FormsAuthentication.FormsCookieName, encryptedTicket)
             {
-                HttpOnly = true,  // Запрещает доступ через JS
-                Secure = FormsAuthentication.RequireSSL // Включает Secure, если сайт работает по HTTPS
+                HttpOnly = true,
+                Secure = FormsAuthentication.RequireSSL
             };
             Response.Cookies.Add(authCookie);
             return RedirectToAction("Index", "Home");
@@ -101,8 +107,9 @@ namespace TWeb48.Controllers
         }
         
         
-        
-        public new ActionResult Profile()
+        [Authorize]
+        [HttpGet]
+        public new ActionResult GetProfile()    
         {
             var userName = User.Identity.Name;
             var user = _context.Users.FirstOrDefault(u => u.Name == userName);
