@@ -221,6 +221,7 @@
     <Content Include="Views\Admin\AdminPanel.cshtml" />
     <Content Include="Views\Home\Car.cshtml" />
     <Content Include="Views\Home\Cars.cshtml" />
+    <Content Include="wwwroot\button.css" />
     <Content Include="wwwroot\newStyle.css" />
     <Content Include="wwwroot\site.css" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
