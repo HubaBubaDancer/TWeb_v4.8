@@ -7,16 +7,39 @@
     <title>aaa</title>
     <link rel="stylesheet" href="~/wwwroot/site.css"/>
     <link rel="stylesheet" href="~/wwwroot/newStyle.css"/>
+    <link rel="stylesheet" href="~/wwwroot/button.css"/>
+    <style>
+        .civic {
+            position: absolute;
+            right: 0px;
+            bottom: 35px;
+            width: 50%;
+        }
+        .lefttext {
+            position: absolute;
+            left: 12%;
+            top: 30%;
+        }
+        .customtext {
+            font-size: 150px;
+        }
+        .customtext2 {
+            font-size: 50px;
+        }
+    </style>
 </head>
-
-<div class="text-center">
-    @if (!string.IsNullOrEmpty(userName))
-    {
-        <h1 class="display-4">Hello, @userName</h1>
-    }
-    else
-    {
-        <h1 class="display-4">Welcome</h1>
-    }
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<body>
+    <div class="left, lefttext">
+        @if (!string.IsNullOrEmpty(userName))
+        {
+            <h1 class="customtext">Hello, @userName</h1>
+        }
+        else
+        {
+            <h1 class="customtext">Welcome</h1>
+        }
+        <p class="customtext2">Rent the car of your dreams</p>
+        <a class="button-64" href="@Url.Action("Cars", "Home")" role="button"><span class="text" >Pick your car</span></a>
+    </div>
+    <img src="~/wwwroot/images/civic.png" alt="Description of image" class="civic"/>
+</body>

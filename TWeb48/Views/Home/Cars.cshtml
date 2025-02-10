@@ -18,11 +18,8 @@ else
     {
         <div class="car-info">
             <h2>@car.Name Info</h2>
-            @foreach(var item in car.PhotoPaths)
-            {
-                <img src="@item" alt="Car Image" width="200" height="200">
-            }
-            <a href="@Url.Action("Car", "Home", new { id = car.Id })" class="btn btn-primary">Add Car</a>
+            <img src="@car.PhotoPath" alt="Car Image" width="200" height="200">
+            <a href="@Url.Action("Car", "Home", new { id = car.Id })" class="btn btn-primary">View Car</a>
         </div>
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Linq;
 using System.Web.Mvc;
 using AutoMapper;
@@ -26,7 +27,8 @@ namespace TWeb48.Controllers
         
         public ActionResult AddCar()
         {
-            return View();
+            var model = new CarRequest();
+            return View(model);
         }
         
         [HttpPost]
@@ -39,6 +41,29 @@ namespace TWeb48.Controllers
         }
         
         
+        
+        public ActionResult UploadImage(Guid id)
+        {
+            var car = _context.Cars.FirstOrDefault(c => c.Id == id);
+            return View(car);
+        }
+        
+        
+        [HttpPost]
+        public ActionResult SelectPhoto(Guid carId, string photo)
+        {
+            var car = _context.Cars.FirstOrDefault(c => c.Id == carId);
+            if (car == null)
+            {
+                return HttpNotFound();
+            }
+
+            car.PhotoPath = "/wwwroot/uploads/" + photo;
+            _context.Entry(car).State = System.Data.Entity.EntityState.Modified;
+            _context.SaveChanges();
+
+            return RedirectToAction("Car", "Home", new { id = carId });
+        }
         
         
         

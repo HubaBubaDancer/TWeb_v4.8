@@ -53,8 +53,5 @@ namespace TWeb48.Controllers
             return View(cars);
         }
         
-        
-        
-        
     }
 }

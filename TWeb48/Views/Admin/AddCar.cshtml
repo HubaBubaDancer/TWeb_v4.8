@@ -1,3 +1,4 @@
+@using TWeb48.Models
 @model TWeb48.Models.CarRequest
 @using (Html.BeginForm("AddCar", "Admin", FormMethod.Post))
 {
@@ -6,7 +7,6 @@
         <link rel="stylesheet" href="~/wwwroot/site.css"/>
         <link rel="stylesheet" href="~/wwwroot/newStyle.css"/>
     </head>
-
 
     <div>
         <div class="form-group">
@@ -22,11 +22,7 @@
             @Html.TextBoxFor(m => m.Price, new { @class = "form-control" })
         </div>
         <div class="form-group">
-            @Html.LabelFor(m => m.PhotoPaths)
-            @Html.TextBox("PhotoPaths[0]", null, new { @class = "form-control", placeholder = "Enter photo path" })
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.PhotoPaths)
+            @Html.LabelFor(m => m.IsHidden)
             @Html.CheckBoxFor(m => m.IsHidden)
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>

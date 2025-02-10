@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace TWeb48.Models
@@ -7,7 +8,7 @@ namespace TWeb48.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
-        public List<string> PhotoPaths { get; set; } = new List<string>();
+        public string PhotoPath { get; set; }
         public bool IsHidden { get; set; } = true;
     }
 }

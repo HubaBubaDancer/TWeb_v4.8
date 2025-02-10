@@ -8,12 +8,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e337d43-c1d1-4d7c-80af-258ab4c6216f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Models/UpdateRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/Account/UpdateProfile.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppMappingProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AccountController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/Admin/UploadImage.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wwwroot/images/civic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AdminController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Car.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Car.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/CarRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/CarRequest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TWeb48.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TWeb48.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Account/GetProfile.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Account/GetProfile.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Admin/AddCar.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Admin/AddCar.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Home/Car.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Car.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Home/Cars.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Cars.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/newStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/newStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,18 +50,31 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/AppMappingProfile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/AppMappingProfile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/App_Start/RouteConfig.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Global.asax.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Account/GetProfile.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Account/GetProfile.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Account/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Account/Logout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Account/Profile.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Account/Profile.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Account/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Account/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Account/UpdateProfile.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Admin/AddCar.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
@@ -67,6 +87,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/2a7770f5c8da41d5a88abad1cfb8c59e110c00/ea/9ea52b0b/Npgsql.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -186,17 +209,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Controllers/AccountController.cs</url>
-          <line>146</line>
-          <properties documentPath="C:\UTM\IV\TWeb\TWeb_v4.8\TWeb48\Controllers\AccountController.cs" containingFunctionPresentation="Method 'UpdateProfile'">
+          <url>file://$PROJECT_DIR$/Controllers/AdminController.cs</url>
+          <line>56</line>
+          <properties documentPath="C:\UTM\IV\TWeb\TWeb_v4.8\TWeb48\Controllers\AdminController.cs" containingFunctionPresentation="Method 'UploadFile'">
             <startOffsets>
-              <option value="4200" />
+              <option value="1417" />
             </startOffsets>
             <endOffsets>
-              <option value="4274" />
+              <option value="1455" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

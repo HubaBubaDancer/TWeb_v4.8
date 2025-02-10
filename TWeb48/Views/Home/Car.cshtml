@@ -1,3 +1,4 @@
+@using TWeb48.Models
 @model TWeb48.Models.Car
 
 <head>
@@ -6,7 +7,11 @@
     <link rel="stylesheet" href="~/wwwroot/newStyle.css"/>
 </head>
 
-
+@{
+    var authCookie = Request.Cookies[FormsAuthentication.FormsCookieName];
+    var authTicket = FormsAuthentication.Decrypt(authCookie.Value);
+    var roles = authTicket.UserData;
+}
 
 @if (Model.IsHidden == false)
 {
@@ -14,12 +19,13 @@
         <h2>@Model.Name Info</h2>
         <p><strong>Description:</strong> @Model.Description</p>
         <p><strong>Price:</strong> @Model.Price</p>
-    
-        @foreach(var item in Model.PhotoPaths)
-        {
-            <img src="@item" alt="Car Image" width="200" height="200">
-        }
+        <img src="@Model.PhotoPath" alt="Car Image" width="200" height="200">
     </div>
+    
+    if (roles.Contains("Admin"))
+    {
+        <a href="@Url.Action("UploadImage", "Admin", new { Id = Model.Id })" class="btn btn-primary">Select Photo</a>
+    }
 }
 else
 {
