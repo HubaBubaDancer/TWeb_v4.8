@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
+using AutoMapper;
 using TWeb48.Helpers;
 using TWeb48.Models;
 
@@ -13,10 +14,12 @@ namespace TWeb48.Controllers
     {
         
         private readonly TWebDbContext _context;
+        private readonly IMapper _mapper;
 
         public AccountController()
         {
             _context = new TWebDbContext();
+            _mapper = new MapperConfiguration(cfg => cfg.AddProfile<AppMappingProfile>()).CreateMapper();
         }
 
         public ActionResult Login()
@@ -40,21 +43,27 @@ namespace TWeb48.Controllers
                 return View(model);
             }
             
+            
+            var roles = _context.UserRoles
+                .Where(ur => ur.UserId == user.UserId)
+                .Select(ur => ur.Role.Name)
+                .ToArray();
+            
             var ticket = new FormsAuthenticationTicket(
-                1,                     // Версия тикета
-                user.Name,             // Имя пользователя
-                DateTime.Now,          // Дата создания
-                DateTime.Now.AddMinutes(30), // Время истечения
-                true,                  // Запомнить (Persistent)// UserData (можно записать ID, роль, JSON и т. д.)
+                1,                   
+                user.Name,          
+                DateTime.Now,
+                DateTime.Now.AddMinutes(30), 
+                true,
+                string.Join(",", roles),
                 FormsAuthentication.FormsCookiePath
             );
-
-            // Шифруем тикет и создаем куку
+            
             string encryptedTicket = FormsAuthentication.Encrypt(ticket);
             var authCookie = new HttpCookie(FormsAuthentication.FormsCookieName, encryptedTicket)
             {
-                HttpOnly = true,  // Запрещает доступ через JS
-                Secure = FormsAuthentication.RequireSSL // Включает Secure, если сайт работает по HTTPS
+                HttpOnly = true,
+                Secure = FormsAuthentication.RequireSSL
             };
             Response.Cookies.Add(authCookie);
             return RedirectToAction("Index", "Home");
@@ -100,9 +109,11 @@ namespace TWeb48.Controllers
             return RedirectToAction("Login");
         }
         
+  
         
-        
-        public new ActionResult Profile()
+        [Authorize]
+        [HttpGet]
+        public new ActionResult GetProfile()    
         {
             var userName = User.Identity.Name;
             var user = _context.Users.FirstOrDefault(u => u.Name == userName);
@@ -126,7 +137,54 @@ namespace TWeb48.Controllers
         }
         
         
+        public ActionResult UpdateProfile()
+        {
+            var userName = User.Identity.Name;
+            var user = _context.Users.FirstOrDefault(u => u.Name == userName);
+            if (user == null)
+            {
+                return HttpNotFound();
+            }
+
+            var model = new UpdateRequest
+            {
+                Name = user.Name,
+                Email = user.Email,
+                PhoneNumber = user.PhoneNumber,
+                LicenceNumber = user.LicenceNumber
+            };
+
+            return View(model);
+        }
         
+        [HttpPost]
+        public ActionResult UpdateProfile(UpdateRequest request)
+        {
+            var userName = User.Identity.Name;
+            var user = _context.Users.FirstOrDefault(u => u.Name == userName);
+            if (user == null)
+            {
+                return HttpNotFound();
+            }
+            
+            if (user.PasswordHash != PasswordHelper.HashPassword(request.OldPassword))
+            {
+                ModelState.AddModelError("OldPassword", "Invalid password");
+                return View();
+            }
+
+            user.Email = request.Email;
+
+            user.PhoneNumber = request.PhoneNumber;
+            user.Name = request.Name;
+            user.LicenceNumber = request.LicenceNumber;
+            user.PasswordHash = PasswordHelper.HashPassword(request.NewPassword);
+            
+            _context.Entry(user).State = System.Data.Entity.EntityState.Modified;
+            _context.SaveChanges();
+
+            return RedirectToAction("GetProfile");
+        }
         
         
         

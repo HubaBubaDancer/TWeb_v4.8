@@ -7,16 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e337d43-c1d1-4d7c-80af-258ab4c6216f" name="Changes" comment="login with db users">
-      <change afterPath="$PROJECT_DIR$/Models/RegisterModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/UserProfileViewModel.cs" afterDir="false" />
+    <list default="true" id="4e337d43-c1d1-4d7c-80af-258ab4c6216f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Models/UpdateRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/Account/UpdateProfile.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppMappingProfile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AccountController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/IAccountService.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TWeb48.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TWeb48.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Account/Profile.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Account/Profile.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Account/Register.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Account/GetProfile.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Account/GetProfile.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +45,21 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/App_Start/RouteConfig.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Global.asax.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Account/Profile.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Account/Profile.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Account/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Web.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Web.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Web.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/packages.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/packages.config" root0="FORCE_HIGHLIGHTING" />
@@ -73,29 +79,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.TWeb48 - IIS Express.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.TWeb48 - IIS Express.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Irobo\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Irobo\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Irobo\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Irobo\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Irobo\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Irobo\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="TWeb48 - IIS Express" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -152,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739138139381</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added basic create car logic and view car method">
+      <option name="closed" value="true" />
+      <created>1739155787495</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739155787495</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,24 +179,24 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Added db integration with Npgsql + migrations" />
     <MESSAGE value="login with db users" />
-    <option name="LAST_COMMIT_MESSAGE" value="login with db users" />
+    <MESSAGE value="added basic create car logic and view car method" />
+    <option name="LAST_COMMIT_MESSAGE" value="added basic create car logic and view car method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Views/Home/Index.cshtml</url>
-          <line>2</line>
-          <properties documentPath="C:\UTM\IV\TWeb\TWeb_v4.8\TWeb48\Views\Home\Index.cshtml" isMultiMethodBreakpoint="true">
-            <option name="multiMethodBreakpoint" value="true" />
+          <url>file://$PROJECT_DIR$/Controllers/AccountController.cs</url>
+          <line>146</line>
+          <properties documentPath="C:\UTM\IV\TWeb\TWeb_v4.8\TWeb48\Controllers\AccountController.cs" containingFunctionPresentation="Method 'UpdateProfile'">
             <startOffsets>
-              <option value="-1" />
+              <option value="4200" />
             </startOffsets>
             <endOffsets>
-              <option value="-1" />
+              <option value="4274" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
