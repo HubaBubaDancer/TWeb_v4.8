@@ -48,13 +48,15 @@ namespace TWeb48.Services
                 .Select(ur => ur.Role.Name)
                 .ToArray();
 
+            var userData = $"{user.UserId},{string.Join(",", roles)}";
+            
             var ticket = new FormsAuthenticationTicket(
                 1,
                 user.Name,
                 DateTime.Now,
                 DateTime.Now.AddMinutes(30),
                 true,
-                string.Join(",", roles),
+                userData,
                 FormsAuthentication.FormsCookiePath
             );
 

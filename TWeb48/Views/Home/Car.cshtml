@@ -25,6 +25,21 @@
     {
         <a href="@Url.Action("UploadImage", "Admin", new { Id = Model.Id })" class="btn btn-primary">Select Photo</a>
     }
+
+
+    using (Html.BeginForm("RentCar", "Home", FormMethod.Post))
+    {
+        <input type="hidden" name="CarId" value="@Model.Id" />
+        <input type="hidden" name="UserId" value="@Guid.Parse(authTicket.UserData.Split(',')[0])" />
+        <label for="StartDate">Start Date:</label>
+        <label for="StartDate">Start Date:</label>
+        <input type="date" id="StartDate" name="StartDate" required />
+        <label for="EndDate">End Date:</label>
+        <input type="date" id="EndDate" name="EndDate" required />
+
+        <button type="submit" class="btn btn-primary">Rent Car</button>
+    }
+    
 }
 else
 {

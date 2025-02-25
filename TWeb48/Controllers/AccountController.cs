@@ -15,10 +15,12 @@ namespace TWeb48.Controllers
     {
         
         private readonly IAccountService _accountService;
-
+        private readonly IRentService _rentService;
+        
         public AccountController()
         {
             _accountService = new AccountService();
+            _rentService = new RentService();
         }
         
         public ActionResult Login()
@@ -81,10 +83,36 @@ namespace TWeb48.Controllers
         }
         
         
+        public ActionResult Rent(Guid id)
+        {
+            var rent = _rentService.GetRent(id);
+            if (rent == null)
+            {
+                return HttpNotFound();
+            }
+            return View(rent);
+        }
         
         
-        
-        
-        
+        public ActionResult Rents(Guid userId, int page = 1, int pageSize = 10)
+        {
+            var rents = _rentService
+                .GetRents(userId)
+                .OrderByDescending(x => x.StartDate);
+            
+            var totalItems = _rentService.GetRents(userId).Count();
+
+            var model = new IndexViewModel<Rent>
+            {
+                Items = rents,
+                PageInfo = new PageInfo
+                {
+                    PageNumber = page,
+                    PageSize = pageSize,
+                    TotalItems = totalItems
+                }
+            };
+            return View(rents);
+        }
     }
 }

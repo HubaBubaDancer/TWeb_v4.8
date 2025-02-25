@@ -11,12 +11,14 @@
 @{
     var userName = User.Identity.Name;
     var roles = string.Empty;
-
+    FormsAuthenticationTicket authTicket = null;
     if (Request.Cookies[FormsAuthentication.FormsCookieName] != null)
     {
         var authCookie = Request.Cookies[FormsAuthentication.FormsCookieName];
-        var authTicket = FormsAuthentication.Decrypt(authCookie.Value);
+        authTicket = FormsAuthentication.Decrypt(authCookie.Value);
         roles = authTicket.UserData;
+        var userId = Guid.Parse(authTicket.UserData.Split(',')[0]);
+
     }
 }
 <header>
@@ -35,9 +37,6 @@
                     <li class="nav-item">
                         @Html.ActionLink("AllCars", "Cars", "Home", null, new { @class = "nav-link text-dark" })
                     </li>
-                    <li class="nav-item">
-                        @Html.ActionLink("Register", "Register", "Account", null, new { @class = "nav-link text-dark" })
-                    </li>
                     
                     @if (!string.IsNullOrEmpty(userName))
                     {
@@ -46,6 +45,9 @@
                         </li>
                         <li class="nav-item">
                             @Html.ActionLink("Logout", "Logout", "Account", null, new { @class = "nav-link text-dark" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("RentHistory", "Rents", "Account", new { userId = Guid.Parse(authTicket.UserData.Split(',')[0]) }, new { @class = "nav-link text-dark" })
                         </li>
                         if (roles.Contains("Admin"))
                         {
@@ -56,6 +58,9 @@
                     }
                     else
                     {
+                        <li class="nav-item">
+                            @Html.ActionLink("Register", "Register", "Account", null, new { @class = "nav-link text-dark" })
+                        </li>
                         <li class="nav-item">
                             @Html.ActionLink("Login", "Login", "Account", null, new { @class = "nav-link text-dark" })
                         </li>

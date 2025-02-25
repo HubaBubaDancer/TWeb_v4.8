@@ -13,6 +13,7 @@ namespace TWeb48
         public DbSet<Role> Roles { get; set; }
         public DbSet<UserRole> UserRoles { get; set; }
         public DbSet<Car> Cars { get; set; }
+        public DbSet<Rent> Rents { get; set; }
         
         
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

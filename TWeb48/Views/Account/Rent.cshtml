@@ -1,0 +1,24 @@
+@model TWeb48.Models.Rent
+
+<head>
+    <title>RentInfo</title>
+    <link rel="stylesheet" href="~/wwwroot/site.css"/>
+</head>
+
+@{
+    var authCookie = Request.Cookies[FormsAuthentication.FormsCookieName];
+    var authTicket = FormsAuthentication.Decrypt(authCookie.Value);
+    var roles = authTicket.UserData;
+    
+    var startDate = Model.StartDate.Date.ToString();
+    var endDate = Model.EndDate.Date.ToString();
+}
+
+<div class="profile-info">
+    <h2>@Model.StartDate Info</h2>
+    <p><strong>Price: </strong> @Model.Price</p>
+    <p><strong>From:</strong> @startDate</p>
+    <p><strong>To:</strong> @endDate</p>
+    
+    <img src="@Model.Car.PhotoPath" alt="Car Image" width="200" height="200">
+</div>

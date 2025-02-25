@@ -181,19 +181,26 @@
     <Compile Include="Dtos\CarRequest.cs" />
     <Compile Include="Dtos\LoginModel.cs" />
     <Compile Include="Dtos\RegisterModel.cs" />
+    <Compile Include="Dtos\RentRequest.cs" />
     <Compile Include="Dtos\UpdateRequest.cs" />
     <Compile Include="Dtos\UserProfileViewModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\PageInfo.cs" />
     <Compile Include="Helpers\PasswordHelper.cs" />
     <Compile Include="Migrations\202502092023214_InitialCreate.cs" />
     <Compile Include="Migrations\202502092023214_InitialCreate.Designer.cs">
       <DependentUpon>202502092023214_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202502241623223_Rents.cs" />
+    <Compile Include="Migrations\202502241623223_Rents.Designer.cs">
+      <DependentUpon>202502241623223_Rents.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BaseDbItem.cs" />
     <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\Rent.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserRole.cs" />
@@ -201,6 +208,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IAccountService.cs" />
     <Compile Include="Services\IAdminService.cs" />
+    <Compile Include="Services\IRentService.cs" />
     <Compile Include="TWebDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -218,11 +226,14 @@
     <Content Include="Views\Account\Logout.cshtml" />
     <Content Include="Views\Account\GetProfile.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\Rent.cshtml" />
+    <Content Include="Views\Account\Rents.cshtml" />
     <Content Include="Views\Account\UpdateProfile.cshtml" />
     <Content Include="Views\Admin\AddCar.cshtml" />
     <Content Include="Views\Admin\AdminPanel.cshtml" />
     <Content Include="Views\Home\Car.cshtml" />
     <Content Include="Views\Home\Cars.cshtml" />
+    <Content Include="Views\Home\GetAllRents.cshtml" />
     <Content Include="wwwroot\newStyle.css" />
     <Content Include="wwwroot\site.css" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -270,6 +281,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202502092023214_InitialCreate.resx">
       <DependentUpon>202502092023214_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502241623223_Rents.resx">
+      <DependentUpon>202502241623223_Rents.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

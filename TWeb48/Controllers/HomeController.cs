@@ -4,7 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
+using TWeb48.Helpers;
 using TWeb48.Models;
+using TWeb48.Services;
 
 namespace TWeb48.Controllers
 {
@@ -12,10 +14,12 @@ namespace TWeb48.Controllers
     {
         
         private readonly TWebDbContext _context;
+        private readonly IRentService _rentService;
         
         public HomeController()
         {
             _context = new TWebDbContext();
+            _rentService = new RentService();
         }
         
         public ActionResult Index()
@@ -52,6 +56,35 @@ namespace TWeb48.Controllers
             var cars = _context.Cars.ToList();
             return View(cars);
         }
+        
+        public ActionResult GetAllRents(int page = 1, int pageSize = 10)
+        {
+            var rents = _rentService.GetAllRents();
+            var totalItems = _rentService.GetAllRents().Count();
+
+            var model = new IndexViewModel<Rent>
+            {
+                Items = rents,
+                PageInfo = new PageInfo
+                {
+                    PageNumber = page,
+                    PageSize = pageSize,
+                    TotalItems = totalItems
+                }
+            };
+            return View(rents);
+        }        
+        
+        
+        
+        [HttpPost]
+        public ActionResult RentCar(RentRequest request)
+        {
+            return _rentService.RentCar(request);
+        }
+        
+        
+        
         
     }
 }
