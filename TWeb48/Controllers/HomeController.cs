@@ -51,10 +51,28 @@ namespace TWeb48.Controllers
         }
         
         
-        public ActionResult Cars()
+        public ActionResult Cars(int page = 1, int pageSize = 7)
         {
-            var cars = _context.Cars.ToList();
-            return View(cars);
+            var cars = _context.Cars
+                .OrderBy(c => c.Name)
+                .Where(x => x.IsHidden == false)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            var totalItems = _context.Cars.Count();
+
+            var model = new IndexViewModel<Car>
+            {
+                Items = cars,
+                PageInfo = new PageInfo
+                {
+                    PageNumber = page,
+                    PageSize = pageSize,
+                    TotalItems = totalItems
+                }
+            };
+            return View(model);
         }
         
         public ActionResult GetAllRents(int page = 1, int pageSize = 10)

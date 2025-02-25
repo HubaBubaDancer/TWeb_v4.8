@@ -1,0 +1,73 @@
+/* Стиль для страницы профиля */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff; /* Легкий фон для контраста */
+    margin: 0;
+}
+
+.profile-info {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%; /* Чтобы карточка не вылазила за пределы экрана */
+}
+
+.profile-info h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.profile-info p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0.8rem 0;
+}
+
+.profile-info strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-info a {
+    display: inline-block;
+    background-color: #428bf1;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.profile-info a:hover {
+    background-color: #46b8da;
+}
+
+/* Мобильные устройства */
+@media (max-width: 600px) {
+    .profile-info {
+        padding: 1rem;
+    }
+
+    .profile-info h2 {
+        font-size: 2rem;
+    }
+
+    .profile-info p {
+        font-size: 1rem;
+    }
+
+    .profile-info a {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
+}

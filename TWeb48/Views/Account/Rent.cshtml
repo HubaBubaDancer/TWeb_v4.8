@@ -2,23 +2,22 @@
 
 <head>
     <title>RentInfo</title>
-    <link rel="stylesheet" href="~/wwwroot/site.css"/>
+    <link rel="stylesheet" href="~/wwwroot/Profile.css"/>
+    <link rel="stylesheet" href="~/wwwroot/Car.css"/>
 </head>
 
 @{
     var authCookie = Request.Cookies[FormsAuthentication.FormsCookieName];
     var authTicket = FormsAuthentication.Decrypt(authCookie.Value);
     var roles = authTicket.UserData;
-    
-    var startDate = Model.StartDate.Date.ToString();
-    var endDate = Model.EndDate.Date.ToString();
 }
 
 <div class="profile-info">
-    <h2>@Model.StartDate Info</h2>
-    <p><strong>Price: </strong> @Model.Price</p>
-    <p><strong>From:</strong> @startDate</p>
-    <p><strong>To:</strong> @endDate</p>
+    <h2>Rent Info</h2>
+    <p><strong>Price: </strong> @Model.Price $</p>
+    <p><strong>From:</strong> @Model.StartDate.ToShortDateString()</p>
+    <p><strong>To:</strong> @Model.EndDate.ToShortDateString()</p>
     
-    <img src="@Model.Car.PhotoPath" alt="Car Image" width="200" height="200">
+    <img src="@Model.Car.PhotoPath" alt="Car Image" class="car-image">
+    <a href="@Url.Action("Car", "Home", new { id = Model.CarId })" class="btn">View Car</a>
 </div>

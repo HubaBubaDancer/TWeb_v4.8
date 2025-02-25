@@ -11,6 +11,7 @@ namespace TWeb48.Services
         ActionResult AddCar(CarRequest car);
         ActionResult UploadImage(Guid id);
         ActionResult SelectPhoto(Guid carId, string photo);
+        //IEquatable<Car> GetAllCars();
     }
     
     public class AdminService : IAdminService
@@ -52,6 +53,15 @@ namespace TWeb48.Services
 
             return new RedirectResult($"/Home/Car?id={carId}");
         }
+        
+        /*TODO*/
+        /*public IEquatable<Car> GetAllCars()
+        {
+            var cars = _context.Cars.ToList();
+            return null;
+        }*/
+        
+        
     }
     
     

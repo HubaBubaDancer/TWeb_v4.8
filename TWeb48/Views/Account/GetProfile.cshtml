@@ -2,8 +2,7 @@
 
 <head>
     <title>Profile</title>
-    <link rel="stylesheet" href="~/wwwroot/site.css"/>
-    <link rel="stylesheet" href="~/wwwroot/newStyle.css"/>
+    <link rel="stylesheet" href="~/wwwroot/Profile.css"/>
 </head>
 
 <div class="profile-info">
@@ -14,4 +13,3 @@
     <p><strong>Roles:</strong> @string.Join(", ", Model.Roles)</p>
     <a href="@Url.Action("UpdateProfile", "Account")" class="btn btn-primary">Update Profile</a>
 </div>
-

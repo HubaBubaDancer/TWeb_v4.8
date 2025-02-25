@@ -234,8 +234,12 @@
     <Content Include="Views\Home\Car.cshtml" />
     <Content Include="Views\Home\Cars.cshtml" />
     <Content Include="Views\Home\GetAllRents.cshtml" />
-    <Content Include="wwwroot\newStyle.css" />
-    <Content Include="wwwroot\site.css" />
+    <Content Include="wwwroot\Car.css" />
+    <Content Include="wwwroot\cars.css" />
+    <Content Include="wwwroot\index.css" />
+    <Content Include="wwwroot\layout.css" />
+    <Content Include="wwwroot\login.css" />
+    <Content Include="wwwroot\Profile.css" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

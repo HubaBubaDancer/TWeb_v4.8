@@ -3,48 +3,59 @@
 
 <head>
     <title>CarInfo</title>
-    <link rel="stylesheet" href="~/wwwroot/site.css"/>
+    <link rel="stylesheet" href="~/wwwroot/car.css"/>
 </head>
 
 @{
-    var authCookie = Request.Cookies[FormsAuthentication.FormsCookieName];
-    var authTicket = FormsAuthentication.Decrypt(authCookie.Value);
-    var roles = authTicket.UserData;
+    var userName = User.Identity.Name;
+    var roles = string.Empty;
+    var userId = Guid.Empty;
+    if (Request.Cookies[FormsAuthentication.FormsCookieName] != null)
+    {
+        var authCookie = Request.Cookies[FormsAuthentication.FormsCookieName];
+        var authTicket = FormsAuthentication.Decrypt(authCookie.Value);
+        roles = authTicket.UserData;
+        userId = Guid.Parse(authTicket.UserData.Split(',')[0]);
+    }
 }
 
 @if (Model.IsHidden == false)
 {
     <div class="profile-info">
-        <h2>@Model.Name Info</h2>
+        <h2>@Model.Name</h2>
         <p><strong>Description:</strong> @Model.Description</p>
         <p><strong>Price:</strong> @Model.Price</p>
-        <img src="@Model.PhotoPath" alt="Car Image" width="200" height="200">
+        <img src="@Model.PhotoPath" alt="Car Image">
     </div>
+    
+    using (Html.BeginForm("RentCar", "Home", FormMethod.Post))
+    {
+        if (!string.IsNullOrEmpty(userName))
+        {
+            <div class="form-container">
+                <input type="hidden" name="CarId" value="@Model.Id"/>
+                <input type="hidden" name="UserId" value="@userId"/>
+                <label for="StartDate">Start Date:</label>
+                <input type="date" id="StartDate" name="StartDate" required/>
+                <label for="EndDate">End Date:</label>
+                <input type="date" id="EndDate" name="EndDate" required/>
+                <button type="submit">Rent Car</button>
+            </div>
+        }
+    }
     
     if (roles.Contains("Admin"))
     {
-        <a href="@Url.Action("UploadImage", "Admin", new { Id = Model.Id })" class="btn btn-primary">Select Photo</a>
+        <div class="form-container">
+            <p>For Admin only</p>
+            <a href="@Url.Action("UploadImage", "Admin", new { Id = Model.Id })" class="btn btn-primary">Select Photo</a>
+        </div>
+       
     }
-
-
-    using (Html.BeginForm("RentCar", "Home", FormMethod.Post))
-    {
-        <input type="hidden" name="CarId" value="@Model.Id" />
-        <input type="hidden" name="UserId" value="@Guid.Parse(authTicket.UserData.Split(',')[0])" />
-        <label for="StartDate">Start Date:</label>
-        <label for="StartDate">Start Date:</label>
-        <input type="date" id="StartDate" name="StartDate" required />
-        <label for="EndDate">End Date:</label>
-        <input type="date" id="EndDate" name="EndDate" required />
-
-        <button type="submit" class="btn btn-primary">Rent Car</button>
-    }
-    
 }
 else
 {
-    <div class="profile-info">
+    <div class="profile-info hidden">
         <h2>Car is hidden</h2>
     </div>
 }
-

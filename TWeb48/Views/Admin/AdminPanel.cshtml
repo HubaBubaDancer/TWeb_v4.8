@@ -5,14 +5,13 @@
 
 <head>
     <title>aaa</title>
-    <link rel="stylesheet" href="~/wwwroot/site.css"/>
+    <link rel="stylesheet" href="~/wwwroot/Profile.css"/>
 </head>
 
-<div class="text-center">
+<div class="profile-info">
     
-        <h1 class="display-4">Admin Panel</h1>
+        <h2>Admin Panel</h2>
     
-        <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-
         <a href="@Url.Action("AddCar", "Admin")" class="btn btn-primary">Add Car</a>
+        <a href="@Url.Action("AllCars", "Admin")" class="btn btn-primary">Show All Cars</a>
 </div>

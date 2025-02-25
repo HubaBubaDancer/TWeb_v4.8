@@ -17,6 +17,7 @@ namespace TWeb48.Services
         ActionResult UpdateProfile(UpdateRequest request);
         ActionResult GetProfile();
         UpdateRequest PreUpdateProfile();
+        User GetUser(string username);
     }
 
     public class AccountService : IAccountService
@@ -160,6 +161,11 @@ namespace TWeb48.Services
             };
 
             return model;
+        }
+        
+        public User GetUser(string username)
+        {
+            return _context.Users.FirstOrDefault(u => u.Name == username);
         }
         
     }

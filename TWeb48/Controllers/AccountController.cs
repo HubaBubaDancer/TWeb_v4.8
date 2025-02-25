@@ -94,12 +94,16 @@ namespace TWeb48.Controllers
         }
         
         
-        public ActionResult Rents(Guid userId, int page = 1, int pageSize = 10)
+        public ActionResult Rents(int page = 1, int pageSize = 10)
         {
+            var userId = _accountService.GetUser(User.Identity.Name).UserId;
             var rents = _rentService
                 .GetRents(userId)
-                .OrderByDescending(x => x.StartDate);
-            
+                .OrderByDescending(x => x.StartDate)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+    
             var totalItems = _rentService.GetRents(userId).Count();
 
             var model = new IndexViewModel<Rent>
@@ -112,7 +116,7 @@ namespace TWeb48.Controllers
                     TotalItems = totalItems
                 }
             };
-            return View(rents);
+            return View(model);
         }
     }
 }

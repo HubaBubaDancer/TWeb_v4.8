@@ -1,44 +1,29 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
-    var userName =  User.Identity.Name;
+ViewData["Title"] = "Home Page";
+var userName = User.Identity.Name;
 }
 
 <head>
     <title>aaa</title>
-    <link rel="stylesheet" href="~/wwwroot/site.css"/>
-    <link rel="stylesheet" href="~/wwwroot/button.css"/>
-    <style>
-        .civic {
-            position: absolute;
-            right: 0px;
-            bottom: 35px;
-            width: 50%;
-        }
-        .lefttext {
-            position: absolute;
-            left: 12%;
-            top: 30%;
-        }
-        .customtext {
-            font-size: 150px;
-        }
-        .customtext2 {
-            font-size: 50px;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="~/wwwroot/index.css" /> <!-- Подключаем новый CSS файл -->
 </head>
 <body>
-    <div class="left, lefttext">
+<div class="main-container">
+    <div class="content">
         @if (!string.IsNullOrEmpty(userName))
         {
-            <h1 class="customtext">Hello, @userName</h1>
+        <h1>Hello, @userName</h1>
         }
         else
         {
-            <h1 class="customtext">Welcome</h1>
+        <h1>Welcome</h1>
         }
-        <p class="customtext2">Rent the car of your dreams</p>
-        <a class="button-64" href="@Url.Action("Cars", "Home")" role="button"><span class="text" >Pick your car</span></a>
+        <p>Explore the freedom of the open road with our premium car rental services. Whether you're planning a short trip or a long journey, we offer a diverse fleet of well-maintained vehicles, tailored to suit your needs. Enjoy hassle-free bookings, competitive rates, and exceptional customer service. Drive your adventure today!</p>
+        <a class="button-64" href="@Url.Action("Cars", "Home")" role="button">Pick your car</a>
     </div>
-    <img src="~/wwwroot/images/civic.png" alt="Description of image" class="civic"/>
+    <div class="image-container">
+        <img src="~/wwwroot/images/civic.png" alt="Car Image" class="car-image"/>
+    </div>
+</div>
 </body>
