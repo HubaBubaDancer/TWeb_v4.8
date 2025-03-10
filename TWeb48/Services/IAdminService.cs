@@ -12,6 +12,7 @@ namespace TWeb48.Services
         ActionResult UploadImage(Guid id);
         ActionResult SelectPhoto(Guid carId, string photo);
         //IEquatable<Car> GetAllCars();
+        MainStat GetMainStats();
     }
     
     public class AdminService : IAdminService
@@ -60,8 +61,32 @@ namespace TWeb48.Services
             var cars = _context.Cars.ToList();
             return null;
         }*/
-        
-        
+
+
+        public MainStat GetMainStats()
+        {
+            var totalIncome = _context.Rents.Sum(o => o.Price);
+            var thisMonthIncome = _context.Rents.Where(o => o.StartDate.Month == DateTime.Now.Month).Sum(o => o.Price);
+            var thisYearIncome = _context.Rents.Where(o => o.StartDate.Year == DateTime.Now.Year).Sum(o => o.Price);
+            var pastMonthIncome = _context.Rents.Where(o => o.StartDate.Month == DateTime.Now.Month - 1)
+                .Sum(o => o.Price);
+            var differenceInPercent = (thisMonthIncome - pastMonthIncome) / pastMonthIncome * 100;
+            var carsCount = _context.Cars.Count();
+            var rentsCount = _context.Rents.Count();
+            var usersCount = _context.Users.Count();
+            var stats = new MainStat
+            {
+                TotalIncome = totalIncome,
+                ThisMonthIncome = thisMonthIncome,
+                ThisYearIncome = thisYearIncome,
+                Difference = differenceInPercent,
+                TotalCars = carsCount,
+                TotalRents = rentsCount,
+                UsersCount = usersCount,
+            };
+
+            return stats;
+        }
     }
     
     

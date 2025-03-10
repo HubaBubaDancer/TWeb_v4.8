@@ -200,6 +200,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BaseDbItem.cs" />
     <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\MainStat.cs" />
     <Compile Include="Models\Rent.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\User.cs" />
@@ -234,6 +235,7 @@
     <Content Include="Views\Home\Car.cshtml" />
     <Content Include="Views\Home\Cars.cshtml" />
     <Content Include="Views\Home\GetAllRents.cshtml" />
+    <Content Include="wwwroot\admin-panel.css" />
     <Content Include="wwwroot\Car.css" />
     <Content Include="wwwroot\cars.css" />
     <Content Include="wwwroot\index.css" />

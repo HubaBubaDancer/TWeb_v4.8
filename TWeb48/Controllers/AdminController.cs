@@ -21,7 +21,8 @@ namespace TWeb48.Controllers
 
         public ActionResult AdminPanel()
         {
-            return View();
+            var stats = _adminService.GetMainStats();
+            return View(stats);
         }
 
         public ActionResult AddCar()
@@ -46,6 +47,7 @@ namespace TWeb48.Controllers
         {
             return _adminService.SelectPhoto(carId, photo);
         }
+        
         
         
     }

@@ -8,35 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24a98b63-e289-4166-ae13-c5d64077fde6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/wwwroot/Car.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/Profile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/cars.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/MainStat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wwwroot/admin-panel.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TWeb48.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TWeb48.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AccountController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AdminController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Helpers/PageInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Helpers/PageInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/IAccountService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/IAccountService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/IAdminService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/IAdminService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TWeb48.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TWeb48.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Account/GetProfile.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Account/GetProfile.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Account/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Account/Login.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Account/Register.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Account/Rent.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Account/Rent.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Account/Rents.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Account/Rents.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Account/UpdateProfile.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Account/UpdateProfile.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/Admin/AdminPanel.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Admin/AdminPanel.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Home/Car.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Car.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Home/Cars.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Cars.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/newStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/uploads/car1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/uploads/car2.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +44,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/03c98cfc8623445a8db7b66c6ffa5def85db8/3d/fc7fc973/Controller.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/03c98cfc8623445a8db7b66c6ffa5def85db8/5f/60e0b6a2/AsyncResultWrapper.cs" root0="SKIP_HIGHLIGHTING" />
@@ -152,7 +131,10 @@
       <workItem from="1739873736690" duration="4185000" />
       <workItem from="1739885013940" duration="7390000" />
       <workItem from="1740409701341" duration="23288000" />
-      <workItem from="1740463029975" duration="8730000" />
+      <workItem from="1740463029975" duration="10686000" />
+      <workItem from="1740672347048" duration="1555000" />
+      <workItem from="1741569250499" duration="3572000" />
+      <workItem from="1741621065554" duration="377000" />
     </task>
     <task id="LOCAL-00001" summary="BusinessLogic moved from controllers to services">
       <option name="closed" value="true" />
@@ -170,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740443088551</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Some front">
+      <option name="closed" value="true" />
+      <created>1740485265416</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740485265416</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +172,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="BusinessLogic moved from controllers to services" />
     <MESSAGE value="Rents + History" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rents + History" />
+    <MESSAGE value="Some front" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some front" />
   </component>
 </project>
