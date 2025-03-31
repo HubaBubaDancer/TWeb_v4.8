@@ -1,12 +1,9 @@
 using System;
-using System.IO;
-using System.Linq;
 using System.Web.Mvc;
-using AutoMapper;
-using TWeb48.Models;
-using TWeb48.Services;
+using TWeb48.Api.Reference.Dtos;
+using TWeb48.Business.Services;
 
-namespace TWeb48.Controllers
+namespace TWeb48.Api.Controllers
 {
     
     public class AdminController : Controller

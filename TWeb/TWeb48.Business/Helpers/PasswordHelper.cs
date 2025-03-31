@@ -2,7 +2,7 @@ using System;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace TWeb48.Helpers
+namespace TWeb48.Business.Helpers
 {
     public class PasswordHelper
     {

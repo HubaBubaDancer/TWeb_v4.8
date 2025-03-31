@@ -1,6 +1,7 @@
 using System;
 
-namespace TWeb48.Models
+
+namespace TWeb48.Data.Models
 {
     public class Rent
     {

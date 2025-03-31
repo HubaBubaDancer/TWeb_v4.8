@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-
-namespace TWeb48.Models
+namespace TWeb48.Api.Reference.Dtos
 {
     public class CarRequest
     {

@@ -1,15 +1,14 @@
 using System;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
-using AutoMapper;
-using TWeb48.Helpers;
-using TWeb48.Models;
-using TWeb48.Services;
+using TWeb48.Api.Reference.Dtos;
+using TWeb48.Business.Services;
+using TWeb48.Data.Models;
+using TWeb48.Business.Helpers;
 
-namespace TWeb48.Controllers
+
+namespace TWeb48.Api.Controllers
 {
     public class AccountController : Controller
     {

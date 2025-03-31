@@ -7,7 +7,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e337d43-c1d1-4d7c-80af-258ab4c6216f" name="Changes" comment="" />
+    <list default="true" id="4e337d43-c1d1-4d7c-80af-258ab4c6216f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/App.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/Dtos/CarRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/Dtos/LoginModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/Dtos/RegisterModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/Dtos/RentRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/Dtos/UpdateRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api/Controllers/AccountController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api/Controllers/AdminController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api/Controllers/HomeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Business/App.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Business/Helpers/PageInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Business/Helpers/PasswordHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Business/Services/IAccountService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Business/Services/IAdminService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Business/Services/IRentService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/App.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/AppMappingProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/BaseDbItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/Car.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/MainStat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/Rent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/Role.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/UserProfileViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/UserRole.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/TWebDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/GetProfile.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Login.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Logout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Register.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Rent.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Rents.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/UpdateProfile.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Admin/AddCar.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Admin/AdminPanel.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Admin/UploadImage.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/About.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/Car.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/Cars.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/Contact.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/GetAllRents.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Shared/Error.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Web.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/_ViewStart.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TWeb48.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TWeb48.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TWeb48/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TWeb48/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AccountController.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,29 +140,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.TWeb48 - IIS Express.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.TWeb48 - IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;fix/refactoring&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Irobo\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Irobo\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Irobo\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Irobo\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Irobo\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Irobo\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="TWeb48 - IIS Express" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -144,6 +194,7 @@
       <updated>1729262615970</updated>
       <workItem from="1729262617073" duration="22000" />
       <workItem from="1739035550833" duration="1110000" />
+      <workItem from="1743085866957" duration="3354000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />

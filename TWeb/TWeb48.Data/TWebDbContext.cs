@@ -1,5 +1,5 @@
 using System.Data.Entity;
-using TWeb48.Models;
+using TWeb48.Data.Models;
 
 namespace TWeb48
 {

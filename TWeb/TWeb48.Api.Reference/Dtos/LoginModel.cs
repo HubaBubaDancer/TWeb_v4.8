@@ -1,4 +1,4 @@
-namespace TWeb48.Models
+namespace TWeb48.Api.Reference.Dtos
 {
     public class LoginModel
     {

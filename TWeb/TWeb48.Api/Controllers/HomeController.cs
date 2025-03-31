@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using System.Web.Security;
-using TWeb48.Helpers;
-using TWeb48.Models;
-using TWeb48.Services;
+using TWeb48.Api.Reference.Dtos;
+using TWeb48.Data.Models;
+using TWeb48.Business.Helpers;
+using TWeb48.Business.Services;
 
-namespace TWeb48.Controllers
+namespace TWeb48.Api.Controllers
 {
     public class HomeController : Controller
     {

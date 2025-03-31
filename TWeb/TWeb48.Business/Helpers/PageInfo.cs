@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace TWeb48.Helpers
+namespace TWeb48.Business.Helpers
 {
     public class PageInfo
     {

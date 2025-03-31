@@ -3,12 +3,12 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
-using System.Web.UI.WebControls;
 using AutoMapper;
-using TWeb48.Helpers;
-using TWeb48.Models;
+using TWeb48.Api.Reference.Dtos;
+using TWeb48.Data.Models;
+using TWeb48.Business.Helpers;
 
-namespace TWeb48.Services
+namespace TWeb48.Business.Services
 {
     public interface IAccountService
     {

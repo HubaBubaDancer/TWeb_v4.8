@@ -5,9 +5,10 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web.Mvc;
 using AutoMapper;
-using TWeb48.Models;
+using TWeb48.Api.Reference.Dtos;
+using TWeb48.Data.Models;
 
-namespace TWeb48.Services
+namespace TWeb48.Business.Services
 {
     public interface IRentService
     {

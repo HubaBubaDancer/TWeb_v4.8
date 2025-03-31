@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace TWeb48.Models
+namespace TWeb48.Data.Models
 {
     public class Role
     {

@@ -1,5 +1,6 @@
 using AutoMapper;
-using TWeb48.Models;
+using TWeb48.Api.Reference.Dtos;
+using TWeb48.Data.Models;
 
 namespace TWeb48
 {

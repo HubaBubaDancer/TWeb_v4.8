@@ -13,7 +13,6 @@ namespace TWeb48.Controllers
 {
     public class AccountController : Controller
     {
-        
         private readonly IAccountService _accountService;
         private readonly IRentService _rentService;
         
