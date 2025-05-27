@@ -61,12 +61,12 @@ namespace TWeb48.Api.Controllers
         
   
         
-        [Authorize]
         [HttpGet]
-        public new ActionResult GetProfile()    
+        public ActionResult GetProfile()    
         {
             return _accountService.GetProfile();
         }
+        
         
         
         public ActionResult UpdateProfile()

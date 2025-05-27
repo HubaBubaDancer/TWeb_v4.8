@@ -181,6 +181,26 @@
         <Content Include="Content\Site.css" />
         <Content Include="Scripts\bootstrap.js" />
         <Content Include="Scripts\bootstrap.min.js" />
+        <Content Include="wwwroot\admin-panel.css" />
+        <Content Include="wwwroot\button.css" />
+        <Content Include="wwwroot\Car.css" />
+        <Content Include="wwwroot\cars.css" />
+        <Content Include="wwwroot\images\civic.png" />
+        <Content Include="wwwroot\index.css" />
+        <Content Include="wwwroot\layout.css" />
+        <Content Include="wwwroot\login.css" />
+        <Content Include="wwwroot\Profile.css" />
+        <Content Include="wwwroot\uploads\accordXI.png" />
+        <Content Include="wwwroot\uploads\civicTypeR.png" />
+        <Content Include="wwwroot\uploads\civic_sedan.png" />
+        <Content Include="wwwroot\uploads\crv.png" />
+        <Content Include="wwwroot\uploads\defaultCivic.png" />
+        <Content Include="wwwroot\uploads\hrv.png" />
+        <Content Include="wwwroot\uploads\odyssey.png" />
+        <Content Include="wwwroot\uploads\passport.png" />
+        <Content Include="wwwroot\uploads\pilot.png" />
+        <Content Include="wwwroot\uploads\prologue.png" />
+        <Content Include="wwwroot\uploads\ridgeline.png" />
         <None Include="Scripts\jquery-3.3.1.intellisense.js" />
         <Content Include="Scripts\jquery-3.3.1.js" />
         <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -192,6 +212,25 @@
         <Content Include="Scripts\jquery.validate.unobtrusive.js" />
         <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
         <Content Include="Scripts\modernizr-2.8.3.js" />
+        <Content Include="Views\Account\GetProfile.cshtml" />
+        <Content Include="Views\Account\Login.cshtml" />
+        <Content Include="Views\Account\Logout.cshtml" />
+        <Content Include="Views\Account\Register.cshtml" />
+        <Content Include="Views\Account\Rent.cshtml" />
+        <Content Include="Views\Account\Rents.cshtml" />
+        <Content Include="Views\Account\UpdateProfile.cshtml" />
+        <Content Include="Views\Admin\AddCar.cshtml" />
+        <Content Include="Views\Admin\AdminPanel.cshtml" />
+        <Content Include="Views\Admin\UploadImage.cshtml" />
+        <Content Include="Views\Home\About.cshtml" />
+        <Content Include="Views\Home\Car.cshtml" />
+        <Content Include="Views\Home\Cars.cshtml" />
+        <Content Include="Views\Home\Contact.cshtml" />
+        <Content Include="Views\Home\GetAllRents.cshtml" />
+        <Content Include="Views\Home\Index.cshtml" />
+        <Content Include="Views\Shared\Error.cshtml" />
+        <Content Include="Views\Shared\_Layout.cshtml" />
+        <Content Include="Views\_ViewStart.cshtml" />
         <Content Include="Web.config" />
         <Content Include="Web.Debug.config">
             <DependentUpon>Web.config</DependentUpon>
@@ -199,6 +238,7 @@
         <Content Include="Web.Release.config">
             <DependentUpon>Web.config</DependentUpon>
         </Content>
+        <None Include="Views\Web.config" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="App_Data" />

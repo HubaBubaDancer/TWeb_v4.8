@@ -8,55 +8,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e337d43-c1d1-4d7c-80af-258ab4c6216f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/App.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/Dtos/CarRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/Dtos/LoginModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/Dtos/RegisterModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/Dtos/RentRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/Dtos/UpdateRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api/Controllers/AccountController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api/Controllers/AdminController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api/Controllers/HomeController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Business/App.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Business/Helpers/PageInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Business/Helpers/PasswordHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Business/Services/IAccountService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Business/Services/IAdminService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Business/Services/IRentService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/App.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/AppMappingProfile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/BaseDbItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/Car.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/MainStat.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/Rent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/Role.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/UserProfileViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/UserRole.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/TWebDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/GetProfile.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Login.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Logout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Register.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Rent.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Rents.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/UpdateProfile.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Admin/AddCar.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Admin/AdminPanel.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Admin/UploadImage.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/About.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/Car.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/Cars.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/Contact.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/GetAllRents.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Shared/Error.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Web.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/_ViewStart.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TWeb48.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TWeb48.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../TWeb/TWeb.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Api/Global.asax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api/Global.asax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Api/TWeb48.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api/TWeb48.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Data/TWeb48.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/TWeb48.Data.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Data/TWebDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/TWebDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/App_Start/BundleConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/App_Start/FilterConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/App_Start/RouteConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Content/Site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Content/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Content/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Content/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Content/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Content/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Content/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Content/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Content/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Controllers/HomeController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Global.asax" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Global.asax.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Scripts/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Scripts/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Scripts/jquery-3.3.1.intellisense.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Scripts/jquery-3.3.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Scripts/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Scripts/jquery-3.3.1.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Scripts/jquery-3.3.1.slim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Scripts/jquery-3.3.1.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Scripts/jquery-3.3.1.slim.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Scripts/jquery.validate-vsdoc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Scripts/jquery.validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Scripts/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Scripts/jquery.validate.unobtrusive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Scripts/jquery.validate.unobtrusive.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Scripts/modernizr-2.8.3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/TWeb48.Web.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/GetProfile.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Login.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Logout.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Register.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Rent.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Rents.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/UpdateProfile.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Admin/AddCar.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Admin/AdminPanel.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Admin/UploadImage.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/About.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/Car.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/Cars.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/Contact.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/GetAllRents.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Shared/Error.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Shared/_Layout.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/_ViewStart.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Web.Debug.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Web.Release.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TWeb/TWeb48.Web/packages.config" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TWeb48/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TWeb48/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AccountController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,41 +105,24 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/AppMappingProfile.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/AppMappingProfile.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/App_Start/RouteConfig.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Global.asax.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/Dtos/LoginModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb/TWeb48.Api.Reference/Dtos/LoginModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb/TWeb48.Business/App.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../TWeb/TWeb48.Business/Helpers/PageInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../TWeb/TWeb48.Business/Services/IAccountService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/MainStat.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Logout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb/TWeb48.Web/Views/Admin/AddCar.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Admin/AddCar.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Migrations/202502100819539_redoCar.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Account/GetProfile.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Account/GetProfile.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Account/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Account/Logout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Account/Profile.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Account/Profile.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Account/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Account/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Account/UpdateProfile.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Admin/AddCar.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Admin/UploadImage.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Views/Web.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Web.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/Web.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/packages.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/UTM/IV/TWeb/TWeb_v4.8/TWeb48/packages.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/37558cf62c5f4f8bb1a7bdf8b6dbdfad4c3420/c5/663f14b3/DbModelBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/2a7770f5c8da41d5a88abad1cfb8c59e110c00/ea/9ea52b0b/Npgsql.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -195,6 +197,13 @@
       <workItem from="1729262617073" duration="22000" />
       <workItem from="1739035550833" duration="1110000" />
       <workItem from="1743085866957" duration="3354000" />
+      <workItem from="1743442196999" duration="1241000" />
+      <workItem from="1743669937589" duration="1868000" />
+      <workItem from="1746365786555" duration="5247000" />
+      <workItem from="1747133316387" duration="25344000" />
+      <workItem from="1747301249107" duration="1069000" />
+      <workItem from="1748358467799" duration="2929000" />
+      <workItem from="1748362206956" duration="775000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -244,6 +253,29 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="First commit" />

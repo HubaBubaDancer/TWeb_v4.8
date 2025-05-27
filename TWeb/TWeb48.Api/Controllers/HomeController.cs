@@ -10,13 +10,10 @@ namespace TWeb48.Api.Controllers
 {
     public class HomeController : Controller
     {
-        
-        private readonly TWebDbContext _context;
         private readonly IRentService _rentService;
         
         public HomeController()
         {
-            _context = new TWebDbContext();
             _rentService = new RentService();
         }
         
@@ -40,7 +37,7 @@ namespace TWeb48.Api.Controllers
         
         public ActionResult Car(Guid id)
         {
-            var car = _context.Cars.FirstOrDefault(c => c.Id == id);
+            var car = _rentService.GetCarById(id);
             if (car == null)
             {
                 return HttpNotFound();
@@ -51,26 +48,7 @@ namespace TWeb48.Api.Controllers
         
         public ActionResult Cars(int page = 1, int pageSize = 7)
         {
-            var cars = _context.Cars
-                .OrderBy(c => c.Name)
-                .Where(x => x.IsHidden == false)
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
-                .ToList();
-
-            var totalItems = _context.Cars.Count();
-
-            var model = new IndexViewModel<Car>
-            {
-                Items = cars,
-                PageInfo = new PageInfo
-                {
-                    PageNumber = page,
-                    PageSize = pageSize,
-                    TotalItems = totalItems
-                }
-            };
-            return View(model);
+            return View(_rentService.GetCars(1,  7));
         }
         
         public ActionResult GetAllRents(int page = 1, int pageSize = 10)
@@ -98,9 +76,5 @@ namespace TWeb48.Api.Controllers
         {
             return _rentService.RentCar(request);
         }
-        
-        
-        
-        
     }
 }

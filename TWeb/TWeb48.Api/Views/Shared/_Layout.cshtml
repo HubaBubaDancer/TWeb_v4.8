@@ -1,0 +1,83 @@
+﻿@using System.Security.Cryptography
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - TWeb</title>
+    <link rel="stylesheet" href="~/wwwroot/layout.css" />
+</head>
+<body>
+@{
+    var userName = User.Identity.Name;
+    var role = string.Empty;
+    if (Request.Cookies[FormsAuthentication.FormsCookieName] != null)
+    {
+        try
+        {
+            var authCookie = Request.Cookies[FormsAuthentication.FormsCookieName];
+            var authTicket = FormsAuthentication.Decrypt(authCookie.Value);
+            if (authTicket != null && !authTicket.Expired)
+            {
+                userName = authTicket.Name;
+                role = authTicket.UserData;
+            }
+        }
+        catch (CryptographicException ex)
+        {
+            FormsAuthentication.SignOut();
+        }
+    }
+}
+<header>
+    <nav class="navbar">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CarRental</a>
+        <ul class="nav-links">
+            <li class="nav-item">
+                @Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link text-dark" })
+            </li>
+            <li class="nav-item">
+                @Html.ActionLink("AllCars", "Cars", "Home", null, new { @class = "nav-link text-dark" })
+            </li>
+        </ul>
+        <ul class="auth-links">
+            @if (!string.IsNullOrEmpty(userName))
+            {
+                <li class="nav-item">
+                    @Html.ActionLink("Profile", "GetProfile", "Account", null, new { @class = "nav-link text-dark" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Logout", "Logout", "Account", null, new { @class = "nav-link text-dark" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("RentHistory", "Rents", "Account", null, new { @class = "nav-link text-dark" })
+                </li>
+                if (role.Contains("Admin"))
+                {
+                    <li class="nav-item">
+                        @Html.ActionLink("Admin Panel", "AdminPanel", "Admin", null, new { @class = "nav-link text-dark" })
+                    </li>
+                }
+            }
+            else
+            {
+                <li class="nav-item">
+                    @Html.ActionLink("Register", "Register", "Account", null, new { @class = "nav-link text-dark" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Login", "Login", "Account", null, new { @class = "nav-link text-dark" })
+                </li>
+            }
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+
+@RenderSection("Scripts", required: false)
+</body>
+</html>
