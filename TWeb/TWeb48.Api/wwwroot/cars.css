@@ -1,0 +1,98 @@
+/* Общие стили для списка автомобилей */
+.car-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    margin-top: 80px; /* Отступ сверху, чтобы не перекрывать верхнюю плашку */
+}
+
+/* Плашка с информацией о машине */
+.car-info {
+    display: flex;
+    justify-content: space-between; /* Располагаем информацию и фото по бокам */
+    align-items: center;
+    background-color: #e6e6e6;
+    border-radius: 15px; /* Скругляем углы */
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень для выделения блоков */
+    transition: transform 0.3s ease; /* Плавное изменение масштаба при наведении */
+    width: 100%; /* Занимает всю доступную ширину */
+    max-width: 1000px; /* Максимальная ширина плашки */
+    margin: 0 auto; /* Центрируем плашки */
+    height: 250px; /* Уменьшаем высоту плашки */
+}
+
+.car-info:hover {
+    transform: scale(1.05); /* Легкий эффект увеличения при наведении */
+}
+
+.car-info h2 {
+    font-size: 1.6rem; /* Увеличиваем размер заголовка */
+    color: #333; /* Цвет текста */
+    margin: 0;
+}
+
+.car-info .car-image {
+    width: 487px;
+    height: 210px;
+    object-fit: cover; /* Сохраняем пропорции изображения */
+    border-radius: 10px; /* Скругляем углы у фото */
+    margin-left: 1.5rem; /* Отступ между изображением и текстом */
+}
+
+.car-info .car-description {
+    flex: 1; /* Даем описанию занимать все доступное пространство */
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем текст по вертикали */
+}
+
+.car-info .btn {
+    padding: 0.8rem 1.2rem; /* Уменьшаем горизонтальные отступы */
+    background-color: #428bf1; /* Цвет кнопки */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+
+.car-info .btn:hover {
+    background-color: #46b8da; /* Цвет кнопки при наведении */
+}
+
+/* Стиль для пагинации */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #46b8da;
+    color: #fff;
+}
+
+.pagination .active {
+    background-color: #428bf1;
+    color: #333;
+}
+
+.pagination a:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}

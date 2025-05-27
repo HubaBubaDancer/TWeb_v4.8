@@ -1,0 +1,135 @@
+/* Подключаем Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Общие стили */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #ffffff; /* Светлый холодный фон */
+    color: #333; /* Темный холодный цвет текста */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Основная часть */
+main {
+    flex: 1;
+    padding-bottom: 3rem; /* Добавляем отступ снизу, чтобы не перекрывался футером */
+}
+
+/* Навигационная панель */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #2b65b1, #46b8da); /* Градиентный фон для плавного перехода от синего к светло-голубому */
+    padding: 1.5rem 2.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 2rem; /* Увеличенный размер текста для бренда */
+    color: #ffffff; /* Светлый цвет для контраста */
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links, .auth-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li, .auth-links li {
+    margin: 0 1rem; 
+}
+
+.nav-links a, .auth-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem 1.8rem; 
+    font-size: 1.2rem; 
+    border-radius: 8px; 
+    background: #428bf1; /* Более темный синий цвет для кнопок */
+    border: none;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-links a:hover, .auth-links a:hover {
+    background: #46b8da; /* Темный синий при наведении */
+    transform: scale(1.05); /* Увеличение кнопки для эффекта */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 2); /* Легкая тень, создающая 3D-эффект */
+}
+
+.nav-links {
+    margin-right: auto; /* Располагаем навигацию слева */
+}
+
+.auth-links {
+    margin-right: 2rem;
+}
+
+/* Бургер-меню */
+.burger-menu {
+    display: none;
+    font-size: 2rem;
+    color: #182952;
+    cursor: pointer;
+}
+
+/* Мобильное меню */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: #6C8EAD; /* Мягкий синий фон для мобильного меню */
+    padding: 1.2rem;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+}
+
+.mobile-menu li {
+    margin: 0.8rem 0;
+}
+
+.mobile-menu a {
+    color: #182952;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    font-size: 1.4rem; /* Увеличенный размер шрифта для мобильного меню */
+    border-radius: 10px;
+    background: #3C5A6D;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Плавный переход для тени */
+}
+
+.mobile-menu a:hover {
+    background: #2C3E50;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Легкая тень для 3D-эффекта */
+}
+
+/* Показываем меню при активации */
+.mobile-menu.show {
+    display: flex;
+}
+
+/* Адаптивность */
+@media (max-width: 48em) {
+    .nav-links, .auth-links {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}

@@ -8,13 +8,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24a98b63-e289-4166-ae13-c5d64077fde6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Models/MainStat.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wwwroot/admin-panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/Dtos/CarRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/Dtos/LoginModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/Dtos/RegisterModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/Dtos/RentRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/Dtos/UpdateRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api.Reference/Dtos/UserProfileViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api/Controllers/AccountController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api/Controllers/AdminController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Api/Controllers/HomeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Business/Helpers/PageInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Business/Helpers/PasswordHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Business/Services/IAccountService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Business/Services/IAdminService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Business/Services/IRentService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/BaseDbItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/Car.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/MainStat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/Rent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/Role.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/Models/UserRole.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Data/TWebDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/GetProfile.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Login.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Logout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Register.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Rent.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/Rents.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Account/UpdateProfile.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Admin/AddCar.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Admin/AdminPanel.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Admin/UploadImage.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/About.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/Car.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/Cars.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/Contact.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/GetAllRents.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Home/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Shared/Error.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/Web.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TWeb/TWeb48.Web/Views/_ViewStart.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TWeb48.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TWeb48.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AdminController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/IAdminService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/IAdminService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TWeb48.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TWeb48.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Admin/AdminPanel.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Admin/AdminPanel.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +111,7 @@
   &quot;keyToString&quot;: {
     &quot;.NET Project.TWeb48 - IIS Express.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;fix/refactoring&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -134,7 +170,13 @@
       <workItem from="1740463029975" duration="10686000" />
       <workItem from="1740672347048" duration="1555000" />
       <workItem from="1741569250499" duration="3572000" />
-      <workItem from="1741621065554" duration="377000" />
+      <workItem from="1741621065554" duration="1844000" />
+      <workItem from="1742291929518" duration="1556000" />
+      <workItem from="1742397717269" duration="434000" />
+      <workItem from="1742464377152" duration="4000" />
+      <workItem from="1742464416348" duration="870000" />
+      <workItem from="1742558799424" duration="825000" />
+      <workItem from="1743085531640" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="BusinessLogic moved from controllers to services">
       <option name="closed" value="true" />
@@ -168,6 +210,17 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="BusinessLogic moved from controllers to services" />

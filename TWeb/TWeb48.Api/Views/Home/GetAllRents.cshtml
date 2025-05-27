@@ -1,0 +1,25 @@
+@model IEnumerable<TWeb48.Data.Models.Rent>
+
+<head>
+    <title>All Rents</title>
+    <link rel="stylesheet" href="~/wwwroot/site.css"/>
+</head>
+
+@if (!Model.Any())
+{
+    <div class="">
+        <h2>No rents</h2>
+    </div>
+}
+else
+{
+    foreach (var rent in Model)
+    {
+        <div class="">
+            <h2>@rent.StartDate Info</h2>
+            <img src="@rent.Car.PhotoPath" alt="Car Image" width="200" height="200">
+            <a href="@Url.Action("Car", "Home", new { id = rent.Car.Id })" class="btn btn-primary">View Car</a>
+            <a>Price: @rent.Price</a>
+        </div>
+    }
+}
