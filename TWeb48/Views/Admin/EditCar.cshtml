@@ -1,0 +1,22 @@
+@model TWeb48.Models.Car
+@using (Html.BeginForm("EditCar", "Admin", FormMethod.Post))
+{
+    <head>
+        <title>Update Car</title>
+        <link rel="stylesheet" href="~/wwwroot/login.css"/>
+    </head>
+
+    <div class="main" align="center">
+        <p class="sign">Update Car</p>
+        <div class="profile-info">
+            @Html.TextBoxFor(m => m.Name, new { placeholder = "Name", @class = "un" })
+            @Html.TextBoxFor(m => m.Price, new { placeholder = "Price", @class = "un" })
+            @Html.TextBoxFor(m => m.Description, new { placeholder = "Description", @class = "un" })
+            @Html.TextBoxFor(m => m.IsHidden, new { placeholder = "Is Hidden?", @class = "un" })
+        </div>
+        <div style="display: none">
+            @Html.TextBoxFor(m => m.PhotoPath, new { placeholder = "Photo Path", @class = "un" })
+        </div>
+        <button type="submit" class="button-64">Update</button>
+    </div>
+}

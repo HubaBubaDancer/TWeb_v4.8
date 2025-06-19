@@ -1,0 +1,49 @@
+@model TWeb48.Helpers.IndexViewModel<TWeb48.Dtos.CarTakesReport>
+
+<head>
+    <title>Cars</title>
+    <link rel="stylesheet" href="~/wwwroot/cars.css"/>
+</head>
+
+@if (!Model.Items.Any())
+{
+    <div class="profile-info">
+        <h2>No Reports available</h2>
+    </div>
+}
+else
+{
+    <div class="car-list">
+        
+        <h2>Monthly Report. Sorted by popularity</h2>
+        
+        @foreach (var car in Model.Items)
+        {
+            <div class="car-info">
+                <div class="car-description">
+                    <h2>@car.Name</h2>
+                    <h2>Times rented: @car.TakesCount</h2>
+                    <h2>Total income: @car.TotalPrice</h2>
+                </div>
+                <img src="@car.PhotoPath" alt="Car Image" class="car-image"/>
+            </div>
+        }
+    </div>
+
+    <div class="pagination">
+        @if (Model.PageInfo.PageNumber > 1)
+        {
+            <a href="@Url.Action("MonthlyReport", new { page = Model.PageInfo.PageNumber - 1 })">Previous</a>
+        }
+
+        @for (int i = 1; i <= Model.PageInfo.TotalPages; i++)
+        {
+            <a href="@Url.Action("MonthlyReport", new { page = i })" class="@(i == Model.PageInfo.PageNumber ? "active" : "")">@i</a>
+        }
+
+        @if (Model.PageInfo.PageNumber < Model.PageInfo.TotalPages)
+        {
+            <a href="@Url.Action("MonthlyReport", new { page = Model.PageInfo.PageNumber + 1 })">Next</a>
+        }
+    </div>
+}

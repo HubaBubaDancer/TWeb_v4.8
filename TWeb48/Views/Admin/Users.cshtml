@@ -1,0 +1,54 @@
+@model TWeb48.Helpers.IndexViewModel<TWeb48.Models.User>
+
+<head>
+    <title>Cars</title>
+    <link rel="stylesheet" href="~/wwwroot/cars.css"/>
+</head>
+
+@if (!Model.Items.Any())
+{
+    <div class="profile-info">
+        <h2>No users available</h2>
+    </div>
+}
+else
+{
+    <div class="car-list">
+        @foreach (var user in Model.Items)
+        {
+            <div class="car-info">
+                <div class="car-description">
+                    @if (user.Name == "demouser")
+                    {
+                    <h2 style="color: #00b10c">You</h2>
+                    }
+                    
+                    <h2>@user.Name</h2>
+                    <h2>@user.Email</h2>
+                    <h2>@user.LicenceNumber</h2>
+                    <h2>@user.PhoneNumber</h2>
+                </div>
+                
+                <a href="@Url.Action("AdminRents", "Admin", new { userId = user.UserId })" class="btn">View History</a>
+                
+            </div>
+        }
+    </div>
+
+    <div class="pagination">
+        @if (Model.PageInfo.PageNumber > 1)
+        {
+            <a href="@Url.Action("Users", new { page = Model.PageInfo.PageNumber - 1 })">Previous</a>
+        }
+
+        @for (int i = 1; i <= Model.PageInfo.TotalPages; i++)
+        {
+            <a href="@Url.Action("Users", new { page = i })" class="@(i == Model.PageInfo.PageNumber ? "active" : "")">@i</a>
+        }
+
+        @if (Model.PageInfo.PageNumber < Model.PageInfo.TotalPages)
+        {
+            <a href="@Url.Action("Users", new { page = Model.PageInfo.PageNumber + 1 })">Next</a>
+        }
+    </div>
+}

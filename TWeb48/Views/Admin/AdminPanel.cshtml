@@ -1,0 +1,50 @@
+@{
+ViewData["Title"] = "AdminPanel";
+var userName = User.Identity.Name;
+var differenceClass = Model.Difference >= 0 ? "positive" : "negative";
+}
+
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="~/wwwroot/admin-panel.css" />
+</head>
+
+<div class="admin-container">
+    <!-- Доход за месяц (большая цифра) -->
+    <a class="block highlight" href="@Url.Action("MonthlyReport", "Admin")" style="text-decoration: none; color: inherit;">
+        <p>Month Income</p>
+        <h1>@Model.ThisMonthIncome</h1>
+    </a>
+
+    <!-- Основные показатели -->
+    <div class="block">
+        <p>Total Income</p>
+        <h2>@Model.TotalIncome</h2>
+    </div>
+
+    <div class="block">
+        <p>Difference</p>
+        <h2 class="difference @differenceClass">@Model.Difference.ToString("F2")%</h2>
+    </div>
+
+    <div class="block">
+        <p>Total Cars</p>
+        <h2>@Model.TotalCars</h2>
+    </div>
+
+    <a class="block" href="@Url.Action("Users", "Admin")" style="text-decoration: none; color: inherit;">
+        <p>Users</p>
+        <h2>@Model.UsersCount</h2>
+    </a>
+
+    <div class="block">
+        <p>Year Income</p>
+        <h2>@Model.ThisYearIncome</h2>
+    </div>
+
+    <!-- Кнопки -->
+    <div class="button-group">
+        <a href="@Url.Action("AddCar", "Admin")" class="btn btn-primary">Add Car</a>
+        <a href="@Url.Action("Coupones", "Admin")" class="btn btn-primary">Coupons</a>
+    </div>
+</div>

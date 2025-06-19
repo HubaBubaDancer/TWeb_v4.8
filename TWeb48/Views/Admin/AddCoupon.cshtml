@@ -1,0 +1,33 @@
+@model TWeb48.Models.CouponRequest
+@using (Html.BeginForm("AddCoupon", "Admin", FormMethod.Post))
+{
+    <head>
+        <title>aaa</title>
+        <link rel="stylesheet" href="~/wwwroot/login.css"/>
+    </head>
+
+    <div class="main">
+        <p class="sign">Adding New Coupon</p>
+        <div class="profile-info">
+
+            @Html.TextBoxFor(m => m.Code, new { placeholder = "Code", @class = "un" })
+
+            @Html.TextBoxFor(m => m.Description, new { placeholder = "Description", @class = "un" })
+
+            <label for="ValidFrom">From:</label>
+            <input type="date" id="ValidFrom" name="ValidFrom" required/>
+            
+            <label for="ValidUntil">To:</label>
+            <input type="date" id="ValidUntil" name="ValidUntil" required/>
+            
+            @Html.TextBoxFor(m => m.DiscountInPercents, new { placeholder = "Price", @class = "un" })
+
+            @Html.LabelFor(m => m.IsActive, "Is Active?")
+            @Html.CheckBoxFor(m => m.IsActive, new { placeholder = "Is Active? ", @class = "un" })
+
+
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+}

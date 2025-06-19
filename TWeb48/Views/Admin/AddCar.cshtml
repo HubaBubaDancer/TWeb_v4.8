@@ -1,0 +1,29 @@
+@using System.Web.UI.WebControls
+@using TWeb48.Models
+@model TWeb48.Models.CarRequest
+@using (Html.BeginForm("AddCar", "Admin", FormMethod.Post))
+{
+    <head>
+        <title>aaa</title>
+        <link rel="stylesheet" href="~/wwwroot/login.css"/>
+    </head>
+
+    <div class="main">
+        <p class="sign">Adding New Car</p>
+        <div class="profile-info">
+
+            @Html.TextBoxFor(m => m.Name, new { placeholder = "Name", @class = "un" })
+
+            @Html.TextBoxFor(m => m.Description, new { placeholder = "Description", @class = "un" })
+
+            @Html.TextBoxFor(m => m.Price, new { placeholder = "Price", @class = "un" })
+
+            @Html.LabelFor(m => m.IsHidden, "Is Hidden?")
+            @Html.CheckBoxFor(m => m.IsHidden, new { placeholder = "Is Hidden? ", @class = "un" })
+
+
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+}

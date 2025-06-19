@@ -1,1 +1,0 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="TWeb48.Api.MvcApplication" Language="C#" %>

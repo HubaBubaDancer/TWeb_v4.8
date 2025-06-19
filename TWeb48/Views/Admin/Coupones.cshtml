@@ -1,0 +1,57 @@
+@model TWeb48.Helpers.IndexViewModel<TWeb48.Models.Coupon>
+
+<head>
+    <title>Coupons</title>
+    <link rel="stylesheet" href="~/wwwroot/cars.css"/>
+    <link rel="stylesheet" href="~/wwwroot/login.css"/>
+    <link rel="stylesheet" href="~/wwwroot/admin-panel.css"/>
+</head>
+
+
+
+@if (!Model.Items.Any())
+{
+    <div class="profile-info">
+        <h2>No Coupons available</h2>
+        <a href="@Url.Action("AddCoupon", "Admin")" class="btn btn-primary">Add Coupon</a>
+    </div>
+}
+else
+{
+    <div class="car-list">
+        <a href="@Url.Action("AddCoupon", "Admin")" class="btn btn-primary">Add Coupon</a>
+        @foreach (var coupone in Model.Items)
+        {
+            <div class="car-info">
+                <div class="car-description" style="display: flex">
+                    <h2>Code: @coupone.Code</h2>
+                    <h2>Description: @coupone.Description</h2>
+                    <h2>Discount: @coupone.DiscountInPercents %</h2>
+                    <h2>ValidFrom: @coupone.ValidFrom.ToShortDateString()</h2>
+                    <h2>ValidUntil: @coupone.ValidUntil.ToShortDateString()</h2>
+                    <h2>Is Active: @coupone.IsActive</h2>
+                </div>
+
+                <a href="@Url.Action("ManageCoupon", "Admin", new { userId = coupone.Id })" class="btn">Manage Coupon</a>
+
+            </div>
+        }
+    </div>
+
+    <div class="pagination">
+        @if (Model.PageInfo.PageNumber > 1)
+        {
+            <a href="@Url.Action("Users", new { page = Model.PageInfo.PageNumber - 1 })">Previous</a>
+        }
+
+        @for (int i = 1; i <= Model.PageInfo.TotalPages; i++)
+        {
+            <a href="@Url.Action("Users", new { page = i })" class="@(i == Model.PageInfo.PageNumber ? "active" : "")">@i</a>
+        }
+
+        @if (Model.PageInfo.PageNumber < Model.PageInfo.TotalPages)
+        {
+            <a href="@Url.Action("Users", new { page = Model.PageInfo.PageNumber + 1 })">Next</a>
+        }
+    </div>
+}
